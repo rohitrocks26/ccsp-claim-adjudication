@@ -1,6 +1,0 @@
-kafka:
-  bootstrap-servers: localhost:9092
-  topic:
-    entryTopicName: ccsp.application.topic
-    exitTopicName: ccsp.ruleengine.topic
-    parallelTopicName: ccsp.testing.topic
