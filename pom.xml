@@ -144,11 +144,11 @@
 	</profiles>
 
 	<modules>
-		<module>infra</module>
-		<module>event-store</module>
-		<module>commands</module>
-		<module>management</module>
-		<module>scoring</module>
+		<module>spring-leads-infra</module>
+		<module>spring-leads-event-store</module>
+		<module>spring-leads-commands</module>
+		<module>spring-leads-management</module>
+		<module>spring-leads-scoring</module>
 	</modules>
 
 	<repositories>
