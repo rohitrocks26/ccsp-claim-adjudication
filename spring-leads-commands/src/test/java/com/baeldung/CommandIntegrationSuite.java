@@ -1,4 +1,4 @@
-package com.baeldung;
+/*package com.baeldung;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -10,4 +10,4 @@ import com.baeldung.write.test.CommandIntegrationTest;
 @Suite.SuiteClasses({ CommandIntegrationTest.class, EventStoreIntegrationTest.class })
 public class CommandIntegrationSuite {
     //
-}
+}*/

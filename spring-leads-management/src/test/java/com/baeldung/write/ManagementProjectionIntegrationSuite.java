@@ -1,4 +1,4 @@
-package com.baeldung.write;
+/*package com.baeldung.write;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -11,4 +11,4 @@ import com.baeldung.write.test.SudoManagementProjectionIntegrationTest;
 @Suite.SuiteClasses({ ManagementProjectionIntegrationTest.class, SudoManagementProjectionIntegrationTest.class, EventStoreInProjectionIntegrationTest.class })
 public class ManagementProjectionIntegrationSuite {
     //
-}
+}*/

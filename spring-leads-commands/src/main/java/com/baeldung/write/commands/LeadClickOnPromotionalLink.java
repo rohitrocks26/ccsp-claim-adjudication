@@ -8,8 +8,6 @@ public final class LeadClickOnPromotionalLink extends Command {
 
     private UUID idOfLead;
 
-    //
-
     public UUID getIdOfLead() {
         return idOfLead;
     }
@@ -17,8 +15,6 @@ public final class LeadClickOnPromotionalLink extends Command {
     public void setIdOfLead(final UUID idOfLead) {
         this.idOfLead = idOfLead;
     }
-
-    //
 
     @Override
     public int hashCode() {

@@ -29,8 +29,6 @@ public class LeadScore {
         this.score = score;
     }
 
-    //
-
     public Long getId() {
         return id;
     }
@@ -54,8 +52,6 @@ public class LeadScore {
     public void setScore(final Integer score) {
         this.score = score;
     }
-
-    //
 
     @Override
     public int hashCode() {

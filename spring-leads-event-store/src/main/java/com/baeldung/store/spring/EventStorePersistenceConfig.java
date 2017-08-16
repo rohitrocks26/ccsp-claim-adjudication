@@ -18,7 +18,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @EnableJpaRepositories(basePackages = "com.baeldung.store.repo", entityManagerFactoryRef = "eventStoreEntityManager", transactionManagerRef = "eventStoreTransactionManager")
-// @EntityScan({ "com.baeldung.infra.persistence.event" })
 public class EventStorePersistenceConfig {
 
     @Autowired
@@ -27,8 +26,6 @@ public class EventStorePersistenceConfig {
     public EventStorePersistenceConfig() {
         super();
     }
-
-    //
 
     @Bean
     @ConfigurationProperties(prefix = "es.datasource")
@@ -41,7 +38,6 @@ public class EventStorePersistenceConfig {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(eventStoreDataSource());
         em.setPackagesToScan(new String[] { "com.baeldung.infra.persistence.event" });
-
         final HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         final HashMap<String, Object> properties = new HashMap<String, Object>();

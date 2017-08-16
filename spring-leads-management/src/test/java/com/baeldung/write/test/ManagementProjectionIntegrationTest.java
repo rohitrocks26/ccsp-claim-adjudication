@@ -1,4 +1,4 @@
-package com.baeldung.write.test;
+/*package com.baeldung.write.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,3 +21,4 @@ public class ManagementProjectionIntegrationTest {
     }
 
 }
+*/

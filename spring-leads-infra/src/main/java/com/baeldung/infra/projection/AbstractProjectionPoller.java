@@ -25,14 +25,10 @@ public abstract class AbstractProjectionPoller {
     @Autowired
     private ApplicationEventPublisher eventPublisher;
 
-    //
-
     @Scheduled(fixedRate = 60000)
     void readNewEvents() {
         rawEventRepo.findAll().stream().filter(ev -> (ev.getId() > lastProcessedId)).forEach(e -> processEvent(e));
     }
-
-    //
 
     private final void processEvent(final RawEvent rawEvent) {
         BaseEvent event = null;
@@ -41,15 +37,10 @@ public abstract class AbstractProjectionPoller {
         } catch (ClassNotFoundException | IOException e) {
             e.printStackTrace();
         }
-
         event.setCorrelationId(rawEvent.getCorrelationId());
-
         lastProcessedId = rawEvent.getId();
-
         eventPublisher.publishEvent(event);
     }
-
-    //
 
     @PostConstruct
     void instantiate() {

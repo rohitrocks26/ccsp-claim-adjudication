@@ -21,13 +21,9 @@ public class EventStore {
     @Autowired
     private RawEventRepo eventRepo;
 
-    //
-
     public long save(final BaseEvent event) {
         return eventRepo.save(convert(event)).getId();
     }
-
-    //
 
     private RawEvent convert(final BaseEvent event) {
         final RawEvent rawEvent = new RawEvent();

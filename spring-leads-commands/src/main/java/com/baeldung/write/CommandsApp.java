@@ -2,15 +2,11 @@ package com.baeldung.write;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.Configuration;
 
 import com.baeldung.store.spring.EventsConfig;
 
-@Configuration
-//@ComponentScan("com.baeldung.write.web")
 @SpringBootApplication
-public class CommandsApp extends SpringBootServletInitializer {
+public class CommandsApp {
 
     public static void main(final String[] args) {
         new SpringApplicationBuilder().sources(CommandsApp.class, EventsConfig.class).run(args);

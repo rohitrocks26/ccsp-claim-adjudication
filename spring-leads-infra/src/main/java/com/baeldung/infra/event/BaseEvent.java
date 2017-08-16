@@ -7,9 +7,6 @@ public abstract class BaseEvent implements Serializable {
 
     private static final long serialVersionUID = 1;
 
-    /**
-     * This ID is the same for all events committed in the same transaction.
-     */
     private UUID correlationId;
 
     protected BaseEvent() {
@@ -21,8 +18,6 @@ public abstract class BaseEvent implements Serializable {
 
         this.correlationId = correlationId;
     }
-
-    //
 
     public UUID getCorrelationId() {
         return correlationId;

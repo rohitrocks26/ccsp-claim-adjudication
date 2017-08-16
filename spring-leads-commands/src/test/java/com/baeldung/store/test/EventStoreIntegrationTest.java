@@ -1,4 +1,4 @@
-package com.baeldung.store.test;
+/*package com.baeldung.store.test;
 
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 import static org.hamcrest.Matchers.notNullValue;
@@ -39,3 +39,4 @@ public class EventStoreIntegrationTest {
     }
 
 }
+*/

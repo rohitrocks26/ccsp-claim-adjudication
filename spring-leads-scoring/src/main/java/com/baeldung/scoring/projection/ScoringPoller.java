@@ -1,4 +1,4 @@
-package com.baeldung.scoring.projection;
+/*package com.baeldung.scoring.projection;
 
 import org.springframework.stereotype.Component;
 
@@ -12,3 +12,4 @@ public class ScoringPoller extends AbstractProjectionPoller {
     }
 
 }
+*/

@@ -19,8 +19,6 @@ public class CreateLead extends Command {
         this.name = name;
     }
 
-    //
-
     public String getName() {
         return name;
     }
@@ -28,8 +26,6 @@ public class CreateLead extends Command {
     public void setName(final String name) {
         this.name = name;
     }
-
-    //
 
     @Override
     public int hashCode() {
@@ -55,5 +51,4 @@ public class CreateLead extends Command {
             return false;
         return true;
     }
-
 }

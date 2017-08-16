@@ -1,4 +1,4 @@
-package com.baeldung.write;
+/*package com.baeldung.write;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -10,4 +10,4 @@ import com.baeldung.write.test.SudoCommunicationProjectionIntegrationTest;
 @Suite.SuiteClasses({ ScoringProjectionIntegrationTest.class, SudoCommunicationProjectionIntegrationTest.class })
 public class ScoringProjectionIntegrationSuite {
     //
-}
+}*/

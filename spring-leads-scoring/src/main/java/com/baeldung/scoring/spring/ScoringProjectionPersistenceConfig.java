@@ -19,7 +19,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @EnableJpaRepositories(basePackages = "com.baeldung.scoring.persistence.repo", entityManagerFactoryRef = "scoringEntityManager", transactionManagerRef = "scoringTransactionManager")
-// @EntityScan({ "com.baeldung.scoring.persistence.model" })
 public class ScoringProjectionPersistenceConfig {
 
     @Autowired
@@ -28,8 +27,6 @@ public class ScoringProjectionPersistenceConfig {
     public ScoringProjectionPersistenceConfig() {
         super();
     }
-
-    //
 
     @Bean
     @Primary

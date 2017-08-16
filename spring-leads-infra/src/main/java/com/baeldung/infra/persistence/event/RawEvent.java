@@ -16,22 +16,15 @@ import javax.persistence.Table;
 @Table
 public class RawEvent implements Serializable {
 
-    /**
-     * Global, sequentially increasing number (coming from a global sequence)
-     */
+	private static final long serialVersionUID = 75982422874046437L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /**
-     * Assigned by database, identical for all events saved in one transaction
-     */
     @Column
     private OffsetDateTime transactionTime;
 
-    /**
-     * This ID is the same for all events committed in the same transaction.
-     */
     @Column(nullable = false)
     private UUID correlationId;
 
@@ -52,8 +45,6 @@ public class RawEvent implements Serializable {
         this.payload = payload;
         this.type = type;
     }
-
-    //
 
     public Long getId() {
         return id;
@@ -95,21 +86,15 @@ public class RawEvent implements Serializable {
         this.type = type;
     }
 
-    //
-
     @Override
     public String toString() {
         return getClass().getSimpleName() + "#" + id;
     }
 
-    //
-
     @PrePersist
     void onCreate() {
         this.setTransactionTime(OffsetDateTime.now());
     }
-
-    //
 
     @Override
     public int hashCode() {

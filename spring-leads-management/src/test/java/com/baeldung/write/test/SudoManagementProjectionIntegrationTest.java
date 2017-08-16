@@ -1,4 +1,4 @@
-package com.baeldung.write.test;
+/*package com.baeldung.write.test;
 
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 
@@ -50,3 +50,4 @@ public class SudoManagementProjectionIntegrationTest {
     }
 
 }
+*/
