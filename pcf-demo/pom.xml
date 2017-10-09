@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>pcf-demo</name>
-	<description>Sample Pivotal Cloud Foundry application</description>
+	<description>Pivotal Cloud Foundry application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
